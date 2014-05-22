@@ -31,13 +31,13 @@ public interface Node<V> extends Remote {
 	 * Method to set the successor node/host
 	 * @throws RemoteException
 	 */
-	public void setSuccessor() throws RemoteException;
+	public void setSuccessor(Node<V> successor) throws RemoteException;
 	
 	/**
 	 * Method to set the predecessor node/host
 	 * @throws RemoteException
 	 */
-	public void setPredecessor() throws RemoteException;
+	public void setPredecessor(Node<V> predecessor) throws RemoteException;
 
 	/**
 	 * Method to get the predecessor node/host
