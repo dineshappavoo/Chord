@@ -5,7 +5,6 @@ package node;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,14 +16,19 @@ import java.util.Map;
  */
 public class NodeImpl<E> extends UnicastRemoteObject implements Node<E>{
 
+	//Name of the node/host
 	private String name;
 	
+	//Key for the node
 	private String key;
 	
+	//Predecessor of this node
 	private Node<E> predecessor;
 	
+	//Successor of this node
 	private Node<E> successor;
 	
+	//Routing table of this host
 	private Map<String, Node<E>> fingers=new LinkedHashMap<String, Node<E>>();
 
 	/**
