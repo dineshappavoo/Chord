@@ -5,6 +5,7 @@ package node;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.List;
 
 /**
  * @author Dinesh Appavoo
@@ -44,5 +45,20 @@ public interface Node<V> extends Remote {
 	 * @throws RemoteException
 	 */
 	public Node<V> getPredecessor() throws RemoteException;
+	
+	/**
+	 * Method to lookup for a node/host
+	 * @param key
+	 * @return
+	 * @throws RemoteException
+	 */
+	public Node<V> lookup(String key) throws RemoteException;
+	
+	/**
+	 * Method to updated the fingers table
+	 * @param nodes
+	 * @throws RemoteException
+	 */
+	public void updateFingers(List<Node<V>> nodes) throws RemoteException;
 
 }
