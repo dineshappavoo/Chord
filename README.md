@@ -16,11 +16,9 @@ and was developed at MIT
 
 ##Install
 
-This library has the implementaion of chord algorithm to find the shortest path in a directed graph 
-G=[V,E].The following code snippet shows how to get the shortest path,
+This library has the implementaion of chord algorithm to 
 
-    BellmanFordAlgorithm bellmanFord=new BellmanFordAlgorithm();
-    bellmanFord.findShortestPath();
+
 
 ###Input
 	3 3
@@ -32,9 +30,7 @@ First integer is the total number of vertices |V| in the graph G. The next integ
 Next |E| lines has the edges information (u, v, w). All inputs must be given through terminal.
 
 ###Output
-	 Distance for 1 is 0
-	 Distance for 2 is 1
-	 Distance for 3 is 3
+
   
 ##Project Contributor
 
